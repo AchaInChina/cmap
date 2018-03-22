@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{10c8373c-fad2-4f82-a697-5554aea8b9b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="delegate">
+      <UniqueIdentifier>{c0563e88-8a58-4c1a-9575-36fb141a515a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graph">
+      <UniqueIdentifier>{0c7314e7-6755-489a-a128-2b71035b6fc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="threadpool">
+      <UniqueIdentifier>{d5e9f19c-1746-4746-9b5e-d5346f340734}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{d91542c6-41ec-4ee2-a4e9-c18deb91af46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mapprovider">
+      <UniqueIdentifier>{47834f58-1fbf-42ad-9543-3e4c6f7861fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objectmodel">
+      <UniqueIdentifier>{bdd1b10e-dee9-4f8d-932c-9b362410a2d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="overlay">
+      <UniqueIdentifier>{5807bb51-7f49-4399-9ee5-0561759d964d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projection">
+      <UniqueIdentifier>{3706549f-ed6b-4b78-8203-e265777e5d32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sqlite">
+      <UniqueIdentifier>{d03c97f8-200c-483a-8720-7904ec2cbfa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tileclass">
+      <UniqueIdentifier>{2d63d4ef-6377-4147-9c63-0c32a2f518e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tool">
+      <UniqueIdentifier>{8d3ef18f-fff5-46d3-9f36-4ccef92535ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tool\hashmap">
+      <UniqueIdentifier>{fb5ef3db-25b2-42e6-876c-e337163ee639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tool\membuff">
+      <UniqueIdentifier>{a23df83c-9563-4a4b-b66e-17779302d158}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tool\ucontext">
+      <UniqueIdentifier>{0a38d054-32aa-439b-8dee-f18c9e548c9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="poly2tri">
+      <UniqueIdentifier>{1f793e3b-2760-419e-a32d-74b6c1251bf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\CacheProvider.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\Interface.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\MapControl.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\MapCore.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="delegate\delegate.h">
+      <Filter>delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="mapgraph\ImageConver.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="mapgraph\MapFont.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="mapgraph\MapGraph.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="mapgraph\SourceManager.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="threadpool\MyCond.h">
+      <Filter>threadpool</Filter>
+    </ClInclude>
+    <ClInclude Include="threadpool\MyGraphEventProTask.h">
+      <Filter>threadpool</Filter>
+    </ClInclude>
+    <ClInclude Include="threadpool\MyImageGetTask.h">
+      <Filter>threadpool</Filter>
+    </ClInclude>
+    <ClInclude Include="threadpool\MyList.h">
+      <Filter>threadpool</Filter>
+    </ClInclude>
+    <ClInclude Include="threadpool\MyMutex.h">
+      <Filter>threadpool</Filter>
+    </ClInclude>
+    <ClInclude Include="threadpool\MyQueue.h">
+      <Filter>threadpool</Filter>
+    </ClInclude>
+    <ClInclude Include="threadpool\MyStack.h">
+      <Filter>threadpool</Filter>
+    </ClInclude>
+    <ClInclude Include="threadpool\MyThread.h">
+      <Filter>threadpool</Filter>
+    </ClInclude>
+    <ClInclude Include="threadpool\MyThreadPool.h">
+      <Filter>threadpool</Filter>
+    </ClInclude>
+    <ClInclude Include="threadpool\Task.h">
+      <Filter>threadpool</Filter>
+    </ClInclude>
+    <ClInclude Include="threadpool\TestTask.h">
+      <Filter>threadpool</Filter>
+    </ClInclude>
+    <ClInclude Include="http\include\curl\curl.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\include\curl\curlbuild.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\include\curl\curlrules.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\include\curl\curlver.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\include\curl\easy.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\include\curl\mprintf.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\include\curl\multi.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\include\curl\stdcheaders.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\include\curl\typecheck-gcc.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="mapprovider\EmptyProvider.h">
+      <Filter>mapprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="mapprovider\GaoDeMapProvider.h">
+      <Filter>mapprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="mapprovider\MapProvider.h">
+      <Filter>mapprovider</Filter>
+    </ClInclude>
+    <ClInclude Include="objectmodel\ObservableCollection.h">
+      <Filter>objectmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="overlay\BaseMapRoute.h">
+      <Filter>overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="overlay\MapMarker.h">
+      <Filter>overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="overlay\MapOverlay.h">
+      <Filter>overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="overlay\MapPolygon.h">
+      <Filter>overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="overlay\MapRoute.h">
+      <Filter>overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="overlay\MapToolTip.h">
+      <Filter>overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="overlay\MarkerCustom.h">
+      <Filter>overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="projection\MercatorProjection.h">
+      <Filter>projection</Filter>
+    </ClInclude>
+    <ClInclude Include="projection\PureProjection.h">
+      <Filter>projection</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\include\Assertion.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\include\Backup.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\include\Column.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\include\Database.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\include\Exception.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\include\sqlite3.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\include\sqlite3ext.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\include\SQLiteCpp.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\include\SqlWarpper.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\include\Statement.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\include\Transaction.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\include\VariadicBind.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="tileclass\DrawTile.h">
+      <Filter>tileclass</Filter>
+    </ClInclude>
+    <ClInclude Include="tileclass\GPoint.h">
+      <Filter>tileclass</Filter>
+    </ClInclude>
+    <ClInclude Include="tileclass\GRect.h">
+      <Filter>tileclass</Filter>
+    </ClInclude>
+    <ClInclude Include="tileclass\GSize.h">
+      <Filter>tileclass</Filter>
+    </ClInclude>
+    <ClInclude Include="tileclass\head.h">
+      <Filter>tileclass</Filter>
+    </ClInclude>
+    <ClInclude Include="tileclass\LoadTask.h">
+      <Filter>tileclass</Filter>
+    </ClInclude>
+    <ClInclude Include="tileclass\PointLatLng.h">
+      <Filter>tileclass</Filter>
+    </ClInclude>
+    <ClInclude Include="tileclass\PureImage.h">
+      <Filter>tileclass</Filter>
+    </ClInclude>
+    <ClInclude Include="tileclass\RectLatLng.h">
+      <Filter>tileclass</Filter>
+    </ClInclude>
+    <ClInclude Include="tileclass\SizeLatLng.h">
+      <Filter>tileclass</Filter>
+    </ClInclude>
+    <ClInclude Include="tileclass\Tile.h">
+      <Filter>tileclass</Filter>
+    </ClInclude>
+    <ClInclude Include="tileclass\TileMatrix.h">
+      <Filter>tileclass</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\hashmap\c_algo.h">
+      <Filter>tool\hashmap</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\hashmap\c_def.h">
+      <Filter>tool\hashmap</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\hashmap\c_function.h">
+      <Filter>tool\hashmap</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\hashmap\c_iterator.h">
+      <Filter>tool\hashmap</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\hashmap\c_list.h">
+      <Filter>tool\hashmap</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\hashmap\c_map.h">
+      <Filter>tool\hashmap</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\hashmap\c_memory.h">
+      <Filter>tool\hashmap</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\hashmap\c_pair.h">
+      <Filter>tool\hashmap</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\hashmap\c_queue.h">
+      <Filter>tool\hashmap</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\hashmap\c_set.h">
+      <Filter>tool\hashmap</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\hashmap\c_stack.h">
+      <Filter>tool\hashmap</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\hashmap\c_tree.h">
+      <Filter>tool\hashmap</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\hashmap\c_vector.h">
+      <Filter>tool\hashmap</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\ucontext\ucontext.h">
+      <Filter>tool\ucontext</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\poly2tri.h">
+      <Filter>poly2tri</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\sweep\advancing_front.h">
+      <Filter>poly2tri</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\sweep\cdt.h">
+      <Filter>poly2tri</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\sweep\sweep.h">
+      <Filter>poly2tri</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\sweep\sweep_context.h">
+      <Filter>poly2tri</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\common\shapes.h">
+      <Filter>poly2tri</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\common\utils.h">
+      <Filter>poly2tri</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\triangle.h">
+      <Filter>poly2tri</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMAPDLL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\CacheProvider.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\Interface.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\MapControl.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\MapCore.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="mapgraph\ImageConver.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="mapgraph\MapFont.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="mapgraph\MapGraph.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="mapgraph\SourceManager.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="threadpool\MyCond.cpp">
+      <Filter>threadpool</Filter>
+    </ClCompile>
+    <ClCompile Include="threadpool\MyGraphEventProTask.cpp">
+      <Filter>threadpool</Filter>
+    </ClCompile>
+    <ClCompile Include="threadpool\MyImageGetTask.cpp">
+      <Filter>threadpool</Filter>
+    </ClCompile>
+    <ClCompile Include="threadpool\MyList.cpp">
+      <Filter>threadpool</Filter>
+    </ClCompile>
+    <ClCompile Include="threadpool\MyMutex.cpp">
+      <Filter>threadpool</Filter>
+    </ClCompile>
+    <ClCompile Include="threadpool\MyQueue.cpp">
+      <Filter>threadpool</Filter>
+    </ClCompile>
+    <ClCompile Include="threadpool\MyStack.cpp">
+      <Filter>threadpool</Filter>
+    </ClCompile>
+    <ClCompile Include="threadpool\MyThread.cpp">
+      <Filter>threadpool</Filter>
+    </ClCompile>
+    <ClCompile Include="threadpool\MyThreadPool.cpp">
+      <Filter>threadpool</Filter>
+    </ClCompile>
+    <ClCompile Include="threadpool\Task.cpp">
+      <Filter>threadpool</Filter>
+    </ClCompile>
+    <ClCompile Include="threadpool\TestTask.cpp">
+      <Filter>threadpool</Filter>
+    </ClCompile>
+    <ClCompile Include="mapprovider\EmptyProvider.cpp">
+      <Filter>mapprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="mapprovider\GaoDeMapProvider.cpp">
+      <Filter>mapprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="mapprovider\MapProvider.cpp">
+      <Filter>mapprovider</Filter>
+    </ClCompile>
+    <ClCompile Include="objectmodel\ObservableCollection.cpp">
+      <Filter>objectmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="overlay\BaseMapRoute.cpp">
+      <Filter>overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="overlay\MapMarker.cpp">
+      <Filter>overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="overlay\MapOverlay.cpp">
+      <Filter>overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="overlay\MapPolygon.cpp">
+      <Filter>overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="overlay\MapRoute.cpp">
+      <Filter>overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="overlay\MapToolTip.cpp">
+      <Filter>overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="overlay\MarkerCustom.cpp">
+      <Filter>overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="projection\MercatorProjection.cpp">
+      <Filter>projection</Filter>
+    </ClCompile>
+    <ClCompile Include="projection\PureProjection.cpp">
+      <Filter>projection</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite\Backup.cpp">
+      <Filter>sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite\Column.cpp">
+      <Filter>sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite\Database.cpp">
+      <Filter>sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite\SqlWarpper.cpp">
+      <Filter>sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite\Statement.cpp">
+      <Filter>sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite\Transaction.cpp">
+      <Filter>sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="tileclass\DrawTile.cpp">
+      <Filter>tileclass</Filter>
+    </ClCompile>
+    <ClCompile Include="tileclass\GPoint.cpp">
+      <Filter>tileclass</Filter>
+    </ClCompile>
+    <ClCompile Include="tileclass\GRect.cpp">
+      <Filter>tileclass</Filter>
+    </ClCompile>
+    <ClCompile Include="tileclass\GSize.cpp">
+      <Filter>tileclass</Filter>
+    </ClCompile>
+    <ClCompile Include="tileclass\LoadTask.cpp">
+      <Filter>tileclass</Filter>
+    </ClCompile>
+    <ClCompile Include="tileclass\PointLatLng.cpp">
+      <Filter>tileclass</Filter>
+    </ClCompile>
+    <ClCompile Include="tileclass\PureImage.cpp">
+      <Filter>tileclass</Filter>
+    </ClCompile>
+    <ClCompile Include="tileclass\RectLatLng.cpp">
+      <Filter>tileclass</Filter>
+    </ClCompile>
+    <ClCompile Include="tileclass\SizeLatLng.cpp">
+      <Filter>tileclass</Filter>
+    </ClCompile>
+    <ClCompile Include="tileclass\Tile.cpp">
+      <Filter>tileclass</Filter>
+    </ClCompile>
+    <ClCompile Include="tileclass\TileMatrix.cpp">
+      <Filter>tileclass</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\hashmap\c_algo.c">
+      <Filter>tool\hashmap</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\hashmap\c_function.c">
+      <Filter>tool\hashmap</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\hashmap\c_iterator.c">
+      <Filter>tool\hashmap</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\hashmap\c_list.c">
+      <Filter>tool\hashmap</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\hashmap\c_map.c">
+      <Filter>tool\hashmap</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\hashmap\c_memory.c">
+      <Filter>tool\hashmap</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\hashmap\c_pair.c">
+      <Filter>tool\hashmap</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\hashmap\c_queue.c">
+      <Filter>tool\hashmap</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\hashmap\c_set.c">
+      <Filter>tool\hashmap</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\hashmap\c_stack.c">
+      <Filter>tool\hashmap</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\hashmap\c_tree.c">
+      <Filter>tool\hashmap</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\hashmap\c_vector.c">
+      <Filter>tool\hashmap</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\ucontext\ucontext.cpp">
+      <Filter>tool\ucontext</Filter>
+    </ClCompile>
+    <ClCompile Include="delegate\delegate.cpp">
+      <Filter>delegate</Filter>
+    </ClCompile>
+    <ClCompile Include="poly2tri\sweep\advancing_front.cc">
+      <Filter>poly2tri</Filter>
+    </ClCompile>
+    <ClCompile Include="poly2tri\sweep\cdt.cc">
+      <Filter>poly2tri</Filter>
+    </ClCompile>
+    <ClCompile Include="poly2tri\sweep\sweep.cc">
+      <Filter>poly2tri</Filter>
+    </ClCompile>
+    <ClCompile Include="poly2tri\sweep\sweep_context.cc">
+      <Filter>poly2tri</Filter>
+    </ClCompile>
+    <ClCompile Include="poly2tri\common\shapes.cc">
+      <Filter>poly2tri</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

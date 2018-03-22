@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6BDE6E1E-4D29-4B01-B94D-DD4848EF7E19}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CMAPDLL</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>F:\pragram bakup\CMAPDLL\CMAPDLL\tileclass;F:\pragram bakup\CMAPDLL\CMAPDLL\projection;F:\pragram bakup\CMAPDLL\CMAPDLL\http\include\curl;F:\pragram bakup\CMAPDLL\CMAPDLL\mapprovider;F:\pragram bakup\CMAPDLL\CMAPDLL\core;F:\pragram bakup\CMAPDLL\CMAPDLL\threadpool;F:\pragram bakup\CMAPDLL\CMAPDLL\sdl\include\include\webp;F:\pragram bakup\CMAPDLL\CMAPDLL\sdl\include\include;F:\pragram bakup\CMAPDLL\CMAPDLL\sdl\include;F:\pragram bakup\CMAPDLL\CMAPDLL\mapgraph;F:\pragram bakup\CMAPDLL\CMAPDLL\sqlite\include;F:\pragram bakup\CMAPDLL\CMAPDLL\overlay;F:\pragram bakup\CMAPDLL\CMAPDLL\delegate;F:\pragram bakup\CMAPDLL\CMAPDLL\objectmodel;F:\pragram bakup\CMAPDLL\CMAPDLL\cximaged\include;F:\pragram bakup\CMAPDLL\CMAPDLL\opengl\include\GL;F:\pragram bakup\CMAPDLL\CMAPDLL\sdl\sdl_ttf\include;F:\pragram bakup\CMAPDLL\CMAPDLL\pthreads\include;F:\pragram bakup\CMAPDLL\CMAPDLL\poly2tri;F:\pragram bakup\CMAPDLL\CMAPDLL\poly2tri\sweep;F:\pragram bakup\CMAPDLL\CMAPDLL\poly2tri\common;F:\pragram bakup\CMAPDLL\CMAPDLL\geos\include;F:\pragram bakup\CMAPDLL\CMAPDLL\geos\include\geos;F:\pragram bakup\CMAPDLL\CMAPDLL\geos\include\geos\triangulate;F:\pragram bakup\CMAPDLL\CMAPDLL;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\pragram bakup\CMAPDLL\CMAPDLL\pthreads\lib\x86;F:\pragram bakup\CMAPDLL\CMAPDLL\sdl\sdl_ttf\lib;F:\pragram bakup\CMAPDLL\CMAPDLL\opengl\lib;F:\pragram bakup\CMAPDLL\CMAPDLL\cximaged\lib;F:\pragram bakup\CMAPDLL\CMAPDLL\sqlite\lib;F:\pragram bakup\CMAPDLL\CMAPDLL\sdl\lib;F:\pragram bakup\CMAPDLL\CMAPDLL\http\lib;F:\pragram bakup\CMAPDLL\CMAPDLL\geos\lib;F:\pragram bakup\CMAPDLL\CMAPDLL\geos\include\geos\triangulate;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;CMAPDLL_EXPORTS;_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libcurl_debug.lib;SDL2.lib;SDL2main.lib;SDL2_image.lib;sqlite3.lib;cximagecrtd.lib;jasper.lib;Jpeg.lib;Tiff.lib;zlib.lib;glew32d.lib;OpenGL32.lib;GlU32.Lib;SDL2_ttf.lib;pthreadVC2.lib;geos.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CMAPDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\CacheProvider.h" />
+    <ClInclude Include="core\Interface.h" />
+    <ClInclude Include="core\MapControl.h" />
+    <ClInclude Include="core\MapCore.h" />
+    <ClInclude Include="delegate\delegate.h" />
+    <ClInclude Include="http\include\curl\curl.h" />
+    <ClInclude Include="http\include\curl\curlbuild.h" />
+    <ClInclude Include="http\include\curl\curlrules.h" />
+    <ClInclude Include="http\include\curl\curlver.h" />
+    <ClInclude Include="http\include\curl\easy.h" />
+    <ClInclude Include="http\include\curl\mprintf.h" />
+    <ClInclude Include="http\include\curl\multi.h" />
+    <ClInclude Include="http\include\curl\stdcheaders.h" />
+    <ClInclude Include="http\include\curl\typecheck-gcc.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="mapgraph\ImageConver.h" />
+    <ClInclude Include="mapgraph\MapFont.h" />
+    <ClInclude Include="mapgraph\MapGraph.h" />
+    <ClInclude Include="mapgraph\SourceManager.h" />
+    <ClInclude Include="mapprovider\EmptyProvider.h" />
+    <ClInclude Include="mapprovider\GaoDeMapProvider.h" />
+    <ClInclude Include="mapprovider\MapProvider.h" />
+    <ClInclude Include="objectmodel\ObservableCollection.h" />
+    <ClInclude Include="overlay\BaseMapRoute.h" />
+    <ClInclude Include="overlay\MapMarker.h" />
+    <ClInclude Include="overlay\MapOverlay.h" />
+    <ClInclude Include="overlay\MapPolygon.h" />
+    <ClInclude Include="overlay\MapRoute.h" />
+    <ClInclude Include="overlay\MapToolTip.h" />
+    <ClInclude Include="overlay\MarkerCustom.h" />
+    <ClInclude Include="poly2tri\common\shapes.h" />
+    <ClInclude Include="poly2tri\common\utils.h" />
+    <ClInclude Include="poly2tri\poly2tri.h" />
+    <ClInclude Include="poly2tri\sweep\advancing_front.h" />
+    <ClInclude Include="poly2tri\sweep\cdt.h" />
+    <ClInclude Include="poly2tri\sweep\sweep.h" />
+    <ClInclude Include="poly2tri\sweep\sweep_context.h" />
+    <ClInclude Include="poly2tri\triangle.h" />
+    <ClInclude Include="projection\MercatorProjection.h" />
+    <ClInclude Include="projection\PureProjection.h" />
+    <ClInclude Include="sqlite\include\Assertion.h" />
+    <ClInclude Include="sqlite\include\Backup.h" />
+    <ClInclude Include="sqlite\include\Column.h" />
+    <ClInclude Include="sqlite\include\Database.h" />
+    <ClInclude Include="sqlite\include\Exception.h" />
+    <ClInclude Include="sqlite\include\sqlite3.h" />
+    <ClInclude Include="sqlite\include\sqlite3ext.h" />
+    <ClInclude Include="sqlite\include\SQLiteCpp.h" />
+    <ClInclude Include="sqlite\include\SqlWarpper.h" />
+    <ClInclude Include="sqlite\include\Statement.h" />
+    <ClInclude Include="sqlite\include\Transaction.h" />
+    <ClInclude Include="sqlite\include\VariadicBind.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="threadpool\MyCond.h" />
+    <ClInclude Include="threadpool\MyGraphEventProTask.h" />
+    <ClInclude Include="threadpool\MyImageGetTask.h" />
+    <ClInclude Include="threadpool\MyList.h" />
+    <ClInclude Include="threadpool\MyMutex.h" />
+    <ClInclude Include="threadpool\MyQueue.h" />
+    <ClInclude Include="threadpool\MyStack.h" />
+    <ClInclude Include="threadpool\MyThread.h" />
+    <ClInclude Include="threadpool\MyThreadPool.h" />
+    <ClInclude Include="threadpool\Task.h" />
+    <ClInclude Include="threadpool\TestTask.h" />
+    <ClInclude Include="tileclass\DrawTile.h" />
+    <ClInclude Include="tileclass\GPoint.h" />
+    <ClInclude Include="tileclass\GRect.h" />
+    <ClInclude Include="tileclass\GSize.h" />
+    <ClInclude Include="tileclass\head.h" />
+    <ClInclude Include="tileclass\LoadTask.h" />
+    <ClInclude Include="tileclass\PointLatLng.h" />
+    <ClInclude Include="tileclass\PureImage.h" />
+    <ClInclude Include="tileclass\RectLatLng.h" />
+    <ClInclude Include="tileclass\SizeLatLng.h" />
+    <ClInclude Include="tileclass\Tile.h" />
+    <ClInclude Include="tileclass\TileMatrix.h" />
+    <ClInclude Include="tool\hashmap\c_algo.h" />
+    <ClInclude Include="tool\hashmap\c_def.h" />
+    <ClInclude Include="tool\hashmap\c_function.h" />
+    <ClInclude Include="tool\hashmap\c_iterator.h" />
+    <ClInclude Include="tool\hashmap\c_list.h" />
+    <ClInclude Include="tool\hashmap\c_map.h" />
+    <ClInclude Include="tool\hashmap\c_memory.h" />
+    <ClInclude Include="tool\hashmap\c_pair.h" />
+    <ClInclude Include="tool\hashmap\c_queue.h" />
+    <ClInclude Include="tool\hashmap\c_set.h" />
+    <ClInclude Include="tool\hashmap\c_stack.h" />
+    <ClInclude Include="tool\hashmap\c_tree.h" />
+    <ClInclude Include="tool\hashmap\c_vector.h" />
+    <ClInclude Include="tool\ucontext\ucontext.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CMAPDLL.cpp" />
+    <ClCompile Include="core\CacheProvider.cpp" />
+    <ClCompile Include="core\Interface.cpp" />
+    <ClCompile Include="core\MapControl.cpp" />
+    <ClCompile Include="core\MapCore.cpp" />
+    <ClCompile Include="delegate\delegate.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="mapgraph\ImageConver.cpp" />
+    <ClCompile Include="mapgraph\MapFont.cpp" />
+    <ClCompile Include="mapgraph\MapGraph.cpp" />
+    <ClCompile Include="mapgraph\SourceManager.cpp" />
+    <ClCompile Include="mapprovider\EmptyProvider.cpp" />
+    <ClCompile Include="mapprovider\GaoDeMapProvider.cpp" />
+    <ClCompile Include="mapprovider\MapProvider.cpp" />
+    <ClCompile Include="objectmodel\ObservableCollection.cpp" />
+    <ClCompile Include="overlay\BaseMapRoute.cpp" />
+    <ClCompile Include="overlay\MapMarker.cpp" />
+    <ClCompile Include="overlay\MapOverlay.cpp" />
+    <ClCompile Include="overlay\MapPolygon.cpp" />
+    <ClCompile Include="overlay\MapRoute.cpp" />
+    <ClCompile Include="overlay\MapToolTip.cpp" />
+    <ClCompile Include="overlay\MarkerCustom.cpp" />
+    <ClCompile Include="poly2tri\common\shapes.cc" />
+    <ClCompile Include="poly2tri\sweep\advancing_front.cc" />
+    <ClCompile Include="poly2tri\sweep\cdt.cc" />
+    <ClCompile Include="poly2tri\sweep\sweep.cc" />
+    <ClCompile Include="poly2tri\sweep\sweep_context.cc" />
+    <ClCompile Include="projection\MercatorProjection.cpp" />
+    <ClCompile Include="projection\PureProjection.cpp" />
+    <ClCompile Include="sqlite\Backup.cpp" />
+    <ClCompile Include="sqlite\Column.cpp" />
+    <ClCompile Include="sqlite\Database.cpp" />
+    <ClCompile Include="sqlite\SqlWarpper.cpp" />
+    <ClCompile Include="sqlite\Statement.cpp" />
+    <ClCompile Include="sqlite\Transaction.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="threadpool\MyCond.cpp" />
+    <ClCompile Include="threadpool\MyGraphEventProTask.cpp" />
+    <ClCompile Include="threadpool\MyImageGetTask.cpp" />
+    <ClCompile Include="threadpool\MyList.cpp" />
+    <ClCompile Include="threadpool\MyMutex.cpp" />
+    <ClCompile Include="threadpool\MyQueue.cpp" />
+    <ClCompile Include="threadpool\MyStack.cpp" />
+    <ClCompile Include="threadpool\MyThread.cpp" />
+    <ClCompile Include="threadpool\MyThreadPool.cpp" />
+    <ClCompile Include="threadpool\Task.cpp" />
+    <ClCompile Include="threadpool\TestTask.cpp" />
+    <ClCompile Include="tileclass\DrawTile.cpp" />
+    <ClCompile Include="tileclass\GPoint.cpp" />
+    <ClCompile Include="tileclass\GRect.cpp" />
+    <ClCompile Include="tileclass\GSize.cpp" />
+    <ClCompile Include="tileclass\LoadTask.cpp" />
+    <ClCompile Include="tileclass\PointLatLng.cpp" />
+    <ClCompile Include="tileclass\PureImage.cpp" />
+    <ClCompile Include="tileclass\RectLatLng.cpp" />
+    <ClCompile Include="tileclass\SizeLatLng.cpp" />
+    <ClCompile Include="tileclass\Tile.cpp" />
+    <ClCompile Include="tileclass\TileMatrix.cpp" />
+    <ClCompile Include="tool\hashmap\c_algo.c" />
+    <ClCompile Include="tool\hashmap\c_function.c" />
+    <ClCompile Include="tool\hashmap\c_iterator.c" />
+    <ClCompile Include="tool\hashmap\c_list.c" />
+    <ClCompile Include="tool\hashmap\c_map.c" />
+    <ClCompile Include="tool\hashmap\c_memory.c" />
+    <ClCompile Include="tool\hashmap\c_pair.c" />
+    <ClCompile Include="tool\hashmap\c_queue.c" />
+    <ClCompile Include="tool\hashmap\c_set.c" />
+    <ClCompile Include="tool\hashmap\c_stack.c" />
+    <ClCompile Include="tool\hashmap\c_tree.c" />
+    <ClCompile Include="tool\hashmap\c_vector.c" />
+    <ClCompile Include="tool\ucontext\ucontext.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
